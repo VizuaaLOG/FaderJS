@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fader demo</title>
+</head>
+<body>
+    <div id="element">
+        <ul>
+            <li style="background: red; color: white;"><h1>Slide 1</h1></li>
+            <li style="background: green; color: white;"><h1>Slide 2</h1></li>
+            <li style="background: blue; color: white;"><h1>Slide 3</h1></li>
+            <li style="background: black; color: white;"><h1>Slide 4</h1></li>
+        </ul>
+    </div>
+
+    <script src="dist/fader.min.js"></script>
+    <script>
+        var f = new Fader('#element', {
+            loop: true
+        });
+    </script>
+</body>
+</html>
