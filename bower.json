@@ -1,0 +1,22 @@
+{
+  "name": "faderjs",
+  "description": "Lightweight, no-dependency JavaScript slider. Makes use of CSS3 transitions.",
+  "main": "fader.js",
+  "authors": [
+    "Thomas Erbe <vizuaalog@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "lightweight",
+    "slider",
+    "carousel"
+  ],
+  "homepage": "https://github.com/VizuaaLOG/FaderJS",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
