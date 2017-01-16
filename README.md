@@ -2,6 +2,8 @@
 
 Fader is a lightweight, no-dependency fading carousel. Built using ES6 and compiled with Rollup and Buble. Fader aims to provide a lightweight and easy solution to image and HTML carousels. Should you wish to extend the functionality of Fader then please create a pull request.
 
+[https://vizuaalog.github.io/FaderJS/demo.html](View demo)
+
 # Why?
 
 I'm aware that there are quite a few carousel and slider libraries. THey all seem to provide way too much functionality for what I need or depend on jQuery. In most cases I don't want / need jQuery and find it difficult to find a suitable, lightweight solution. So, I made one.
