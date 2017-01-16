@@ -2,7 +2,7 @@
 
 Fader is a lightweight, no-dependency fading carousel. Built using ES6 and compiled with Rollup and Buble. Fader aims to provide a lightweight and easy solution to image and HTML carousels. Should you wish to extend the functionality of Fader then please create a pull request.
 
-[https://vizuaalog.github.io/FaderJS/demo.html](View demo)
+[View demo](https://vizuaalog.github.io/FaderJS/demo.html)
 
 # Why?
 
