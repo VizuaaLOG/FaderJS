@@ -106,7 +106,7 @@ class Fader {
      * @private 
      */
     _setupSlides() {
-        this._slides.forEach((item) => {
+        this._each(this._slides, (item, index) => {
             item.style.width = '100%';
             item.style.height = '100%';
             item.style.position = 'absolute';
@@ -297,6 +297,12 @@ class Fader {
             return '100%';
         } else {
             return this.height + 'px';
+        }
+    }
+
+    _each(object, callback) {
+        for(let i = 0; i < object.length; i++) {
+            callback(object[i], i);
         }
     }
 }

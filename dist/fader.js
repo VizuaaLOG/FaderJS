@@ -101,7 +101,7 @@ Fader.prototype._resizeSlider = function _resizeSlider () {
 Fader.prototype._setupSlides = function _setupSlides () {
         var this$1 = this;
 
-    this._slides.forEach(function (item) {
+    this._each(this._slides, function (item, index) {
         item.style.width = '100%';
         item.style.height = '100%';
         item.style.position = 'absolute';
@@ -292,5 +292,11 @@ Fader.prototype._calculateHeight = function _calculateHeight () {
         return '100%';
     } else {
         return this.height + 'px';
+    }
+};
+
+Fader.prototype._each = function _each (object, callback) {
+    for(var i = 0; i < object.length; i++) {
+        callback(object[i], i);
     }
 };
