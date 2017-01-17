@@ -198,7 +198,10 @@ Fader.prototype._resetTimer = function _resetTimer () {
  */
 Fader.prototype._changeSlide = function _changeSlide (newSlide, oldSlide) {
     this._activateSlide(newSlide);
-    this._deactivateSlide(oldSlide);
+
+    if(oldSlide !== null) {
+        this._deactivateSlide(oldSlide);
+    }
 };
 
 /**
@@ -210,13 +213,16 @@ Fader.prototype.nextSlide = function nextSlide () {
     if(this._currentSlide < this._slides.length - 1) {
         this._previousSlide = this._currentSlide;
         this._currentSlide++;
+
+        this._changeSlide(this._currentSlide, this._previousSlide);
     } else if(this.loop) {
         this._previousSlide = this._currentSlide;
         this._currentSlide = 0;
+
+        this._changeSlide(this._currentSlide, null);
     }
 
     this._resetTimer();
-    this._changeSlide(this._currentSlide, this._previousSlide);
 };
 
 /**
