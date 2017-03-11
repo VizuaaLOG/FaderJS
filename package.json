@@ -1,6 +1,6 @@
 {
   "name": "faderjs",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Lightweight, no-dependency JavaScript slider. Makes use of CSS3 transitions.",
   "main": "fader.js",
   "keywords": [
