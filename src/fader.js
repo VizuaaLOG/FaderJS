@@ -224,7 +224,7 @@ class Fader {
             this._previousSlide = this._currentSlide;
             this._currentSlide = 0;
 
-            this._changeSlide(this._currentSlide, null);
+            this._changeSlide(this._currentSlide, this._previousSlide);
         }
 
         this._resetTimer();
