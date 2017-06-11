@@ -46,7 +46,7 @@ You then need to use the required markup, the containing element can be anything
 Then instantiate a new Fader instance.
 
 ```html
-var slider = new Fader('#example#', options);
+var slider = new Fader('#example', options);
 ```
 
 # Options
